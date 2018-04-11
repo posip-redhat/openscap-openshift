@@ -1,6 +1,6 @@
 node {
   stage('build app'){
-		  openshiftBuild(namespace: 'labs-ci-cd', buildConfig: 'welcome', showBuildLogs: 'true')
+		  openshiftBuild(namespace: 'labs-ci-cd', buildConfig: 'java-app', showBuildLogs: 'true')
 		}
 
   stage('execute image scan'){
